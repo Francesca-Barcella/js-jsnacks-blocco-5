@@ -90,3 +90,16 @@ function sum (...params){
 const peso_totale = sum (zucchine.peso);
 console.log(peso_totale);
 
+
+//NUOVA SOLUZIONE - FORSE FUNZIONANTE
+let somma = 0
+
+zucchine.forEach((element) => {
+    console.log(element.peso + ' grammi');
+    somma += element.peso;
+})
+console.log('il peso totale è ' + somma + ' grammi');
+
+
+
+
