@@ -72,18 +72,21 @@ const zucchine = [
 
 ]
 
+console.log(zucchine);
+
 //stampo tutti i pesi
 
-let sum = 0;
+const {peso} = zucchine;
+console.log(peso);
 
-zucchine.forEach((element) => {
-    console.log(element.peso + ' gr');
-    //fare la somma di tutti i pesi
-    sum += element.peso;
-    console.log(sum + 'GR');
-});
+function sum (...params){
+    let sum = 0;
+    params.forEach(numb => {
+        sum += numb;
+    })
+    return sum
+}
 
-
-
-
+const peso_totale = sum (zucchine.peso);
+console.log(peso_totale);
 
