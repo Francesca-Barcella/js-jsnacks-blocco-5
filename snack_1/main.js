@@ -11,61 +11,61 @@ Calcola quanto pesano tutte le zucchine.
 //creare array con lista delle zucchine
 const zucchine = [
     {
-        variety: 'nera',
-        peso: 100,
+        varieta: 'nera',
+        peso: 117,
         lunghezza: '10',
     },
 
     {
-        variety: 'romanesco',
-        peso: 80,
+        varieta: 'romanesco',
+        peso: 83,
         lunghezza: '13',
     },
 
     {
-        variety: 'napoletana',
+        varieta: 'napoletana',
         peso: 115,
         lunghezza: '8',
     },
 
     {
-        variety: 'fiorentino',
+        varieta: 'fiorentino',
         peso: 75,
         lunghezza: '19',
     },
 
     {
-        variety: 'tonda',
+        varieta: 'tonda',
         peso: 200,
         lunghezza: '17',
     },
 
     {
-        variety: 'trombetta',
+        varieta: 'trombetta',
         peso: 135,
         lunghezza: '20',
     },
 
     {
-        variety: 'giallo',
+        varieta: 'giallo',
         peso: 145,
         lunghezza: '23',
     },
 
     {
-        variety: 'siciliano',
+        varieta: 'siciliano',
         peso: 167,
         lunghezza: '19',
     },
 
     {
-        variety: 'striata',
+        varieta: 'striata',
         peso: 120,
         lunghezza: '15',
     },
 
     {
-        variety: 'Crookneck',
+        varieta: 'Crookneck',
         peso: 280,
         lunghezza: '25',
     },
@@ -74,24 +74,6 @@ const zucchine = [
 
 console.log(zucchine);
 
-//stampo tutti i pesi
-
-const {peso} = zucchine;
-console.log(peso);
-
-function sum (...params){
-    let sum = 0;
-    params.forEach(numb => {
-        sum += numb;
-    })
-    return sum
-}
-
-const peso_totale = sum (zucchine.peso);
-console.log(peso_totale);
-
-
-//NUOVA SOLUZIONE - FORSE FUNZIONANTE
 let somma = 0
 
 zucchine.forEach((element) => {
