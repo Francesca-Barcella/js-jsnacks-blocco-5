@@ -73,8 +73,17 @@ const zucchine = [
 ]
 
 //stampo tutti i pesi
+
+let sum = 0;
+
 zucchine.forEach((element) => {
-    console.log(element.peso);
+    console.log(element.peso + ' gr');
+    //fare la somma di tutti i pesi
+    sum += element.peso;
+    console.log(sum + 'GR');
 });
 
-    
+
+
+
+
