@@ -37,7 +37,7 @@ const zucchine = [
     {
         varieta: 'tonda',
         peso: 200,
-        lunghezza: 17,
+        lunghezza: 15,
     },
 
     {
@@ -67,7 +67,7 @@ const zucchine = [
     {
         varieta: 'Crookneck',
         peso: 280,
-        lunghezza: 17,
+        lunghezza: 14,
     },
 
 ]
@@ -77,18 +77,44 @@ console.log(zucchine);
 
 //Dividi in due array separati le zucchine che misurano meno o più di 15cm.
 
- const isLonger = zucchine.peso.filter ((numb)=>{
-    console.log(isLonger);
-    if (numb > 15){
+
+// ciclo per individuare zucchine maggiore di 15cm
+const isLunga = zucchine.filter((element) => {
+
+    if (element.lunghezza > 15) {
         return true;
     }
     return false
 });
 
-console.log(isLonger);
+console.log(isLunga);
 
-zucchine.forEach(()=>{
+// ciclo per individuare zucchine maggiore di 15cm
+const isCorta = zucchine.filter((element) => {
 
-})
+    if (element.lunghezza < 15) {
+        return true;
+    }
+    return false
+});
 
+console.log(isCorta);
 
+// creare due nuovi cicli divisi in lunghe e corte
+//lunghe
+const zucchineLunghe = []
+
+isLunga.forEach((element) => {
+    zucchineLunghe.push(element)
+});
+
+console.log(zucchineLunghe);
+
+//corte
+const zucchineCorte = []
+
+isCorta.forEach((element) => {
+    zucchineCorte.push(element)
+});
+
+console.log(zucchineCorte);
